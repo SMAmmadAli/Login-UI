@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/components/get_Value_function.dart';
 
 class MyTextField extends StatelessWidget {
-  final controller;
   final String hindText;
   final Icon? SuffixIcon;
   final Icon PrefixIcon;
   final bool ObscureText;
-  const MyTextField(
+  MyTextField(
       {super.key,
-      this.controller,
       required this.hindText,
       required this.ObscureText,
       required this.SuffixIcon,
@@ -19,7 +18,7 @@ class MyTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: TextField(
-        controller: controller,
+        controller: ObscureText ? controllerUserPassword : controllerUserDetail,
         obscureText: ObscureText,
         decoration: InputDecoration(
             enabledBorder: const OutlineInputBorder(

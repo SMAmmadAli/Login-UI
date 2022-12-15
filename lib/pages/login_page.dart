@@ -3,6 +3,8 @@ import 'package:login_ui/components/my_button.dart';
 import 'package:login_ui/components/my_textfield.dart';
 import 'package:login_ui/components/square_tile.dart';
 
+List mylist = [];
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
   @override
@@ -30,14 +32,14 @@ class LoginPage extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const MyTextField(
+          MyTextField(
             hindText: "Username",
             ObscureText: false,
             PrefixIcon: Icon(Icons.person),
             SuffixIcon: null,
           ),
           const SizedBox(height: 10),
-          const MyTextField(
+          MyTextField(
             hindText: "Password",
             ObscureText: true,
             PrefixIcon: Icon(Icons.lock),
