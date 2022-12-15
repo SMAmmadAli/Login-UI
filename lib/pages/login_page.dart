@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/Contents/colors.dart';
 import 'package:login_ui/components/my_button.dart';
 import 'package:login_ui/components/my_textfield.dart';
 import 'package:login_ui/components/square_tile.dart';
@@ -10,7 +11,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: bgColor,
       body: Column(
         children: [
           const Center(
@@ -27,7 +28,7 @@ class LoginPage extends StatelessWidget {
           ),
           Text(
             'Welcome back you\'ve been missed!',
-            style: TextStyle(color: Colors.grey[700], fontSize: 16.0),
+            style: TextStyle(color: shadegreydark, fontSize: 16.0),
           ),
           const SizedBox(
             height: 25,
@@ -53,7 +54,7 @@ class LoginPage extends StatelessWidget {
               children: [
                 Text(
                   "Forget Password",
-                  style: TextStyle(color: Colors.grey[600]),
+                  style: TextStyle(color: shadegreydark),
                 )
               ],
             ),
@@ -75,7 +76,7 @@ class LoginPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 5.0),
                   child: Text(
                     "Or continue with",
-                    style: TextStyle(color: Colors.grey[400]),
+                    style: TextStyle(color: shadegreydark),
                   ),
                 ),
                 const Expanded(
@@ -102,12 +103,11 @@ class LoginPage extends StatelessWidget {
             children: [
               Text(
                 'Not a member?',
-                style: TextStyle(color: Colors.grey[600]),
+                style: TextStyle(color: shadegreydark),
               ),
               Text(
                 'Register now',
-                style: TextStyle(
-                    color: Colors.blue[600], fontWeight: FontWeight.w500),
+                style: TextStyle(color: blue, fontWeight: FontWeight.w500),
               )
             ],
           )

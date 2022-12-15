@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/Contents/colors.dart';
 
 class SqureTile extends StatelessWidget {
   final String Img;
@@ -9,9 +10,9 @@ class SqureTile extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.white),
+        border: Border.all(color: White),
         borderRadius: BorderRadius.circular(8.0),
-        color: Colors.grey[200],
+        color: imagebgColor,
       ),
       child: Image.asset(
         Img,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_ui/Contents/colors.dart';
 import 'package:login_ui/components/get_Value_function.dart';
 
 class MyTextField extends StatelessWidget {
@@ -21,19 +22,19 @@ class MyTextField extends StatelessWidget {
         controller: ObscureText ? controllerUserPassword : controllerUserDetail,
         obscureText: ObscureText,
         decoration: InputDecoration(
-            enabledBorder: const OutlineInputBorder(
-                borderSide: BorderSide(
-              color: Colors.white,
-            )),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.grey.shade400),
-            ),
-            fillColor: Colors.grey.shade200,
-            filled: true,
-            hintText: hindText,
-            suffixIcon: SuffixIcon,
-            prefixIcon: PrefixIcon,
-            prefixIconColor: Colors.white),
+          enabledBorder: const OutlineInputBorder(
+              borderSide: BorderSide(
+            color: Colors.white,
+          )),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: shadegrey),
+          ),
+          fillColor: shadegreylight,
+          filled: true,
+          hintText: hindText,
+          suffixIcon: SuffixIcon,
+          prefixIcon: PrefixIcon,
+        ),
       ),
     );
   }
